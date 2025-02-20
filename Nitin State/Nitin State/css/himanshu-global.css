@@ -1,0 +1,130 @@
+:root {
+  --lightGreen: #00C000;
+  --mediumGreen: #208b11;
+  --darkGreen: #012A22;
+  --lightBrown: #874737;
+  --yellow: #FFB400;
+  --lightYellow: #fdcd01;
+  --mediumBrown: #6E3B2E;
+  --white: #FFFFFF;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: Calvous;
+  src: url(../plugins/CALVOUS.TTF);
+}
+
+@font-face {
+  font-family: fancy;
+  src: url(../plugins/billy_ohio-webfont.woff);
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.fancy {
+  font-family: fancy !important;
+}
+
+.calvous {
+  font-family: Calvous;
+  font-weight: 100;
+}
+
+.logo {
+  object-fit: cover;
+  height: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.number-container {
+  width: 70%;
+}
+
+.numbers {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px;
+  font-size: 10px;
+  /* transform: scale(0.5, 0.5); */
+}
+
+.numbers > img {
+  padding: 18px 30px;
+  height: 100%;
+}
+
+.numbers > p {
+  font-size: 2.6em;
+  text-align: center;
+  color: var(--lightYellow);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.box-icon > img {
+  width: 56px;
+  filter: drop-shadow(0px 0px 0px var(--lightGreen));
+}
+
+.experience-sec a > h3 {
+  cursor: text !important;
+  color: var(--lightGreen) !important;
+}
+
+.experience-sec a > h3:hover {
+  color: var(--lightGreen) !important;
+}
+
+.package-read-more-btn {
+  border-radius: 100px;
+  margin-top: -25px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: var(--mediumGreen);
+  color: white;
+}
+
+.package-read-more-btn:hover {
+  color: var(--yellow);
+  transform: scale(1.05);
+  transition: 0.6s;
+  padding: 10px 60px;
+}
+
+/* Header */
+.header-menu > a {
+  color: var(--mediumBrown) !important;
+  font-size: 16px !important;
+}
+
+.header-menu:hover > a {
+  color: var(--darkGreen) !important;
+}
+
+.header-menu-active > a {
+  color: var(--mediumGreen) !important;
+}
+
+/* Footer */
+
+.social-icons {
+  width: 26px;
+}

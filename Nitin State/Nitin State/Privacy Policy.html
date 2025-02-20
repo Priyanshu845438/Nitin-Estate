@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Nitin Estate covers 6 acres and features a collection of over 120 plant species displayed in a thematic estate. Visitors enjoy educational opportunities, Dongri cuisine at Nitin’s cafe, and inspiring plant displays.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nitin Estate - Nature's Paradise</title>
+    <meta name="robots" content="index,follow">
+
+    <!-- Global Mandatory Styles -->
+    <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
+    <link href="plugins/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/flaticon/font/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="plugins/owl-carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/slick/slick.css" rel="stylesheet" type="text/css">
+
+    <!-- Revolution Slider Styles -->
+    <link href="plugins/revolution/css/settings.css" rel="stylesheet">
+    <link href="plugins/revolution/css/layers.css" rel="stylesheet">
+    <link href="plugins/revolution/css/navigation.css" rel="stylesheet">
+
+    <!-- Template Layout Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/himanshu-global.css" rel="stylesheet">
+    <style>
+      
+      .pointers-point>h3 {
+            color: var(--mediumGreen) !important;
+            font-size: 24px !important;
+        }
+
+        .pointers-point>p {
+            color: var(--darkGreen) !important;
+            font-size: 16px !important;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            padding: 10px; /* Add padding to the main container */
+            width: 100%; /* Set width to 100% of the viewport */
+            max-width: 100%; /* Set maximum width to 100% of the viewport */
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+
+
+      .blogs-container {
+        width: 100%; /* Adjust the width as needed */
+    max-width: 1200px; /* Set a maximum width to avoid excessive stretching */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in the width calculation */
+      }
+
+      .sidebar-container {
+          width: 30%; /* Adjust width of sidebar container */
+          background-color: #fff;
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog {
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-bottom: 10px;
+      }
+
+      .sidebar {
+          color: #333;
+      }
+
+      /* Center align links within sidebar */
+      .sidebar a {
+          display: block;
+          margin-bottom: 10px;
+          text-decoration: none;
+          color: #333;
+      }
+
+      /* CSS for the 'See more videos' button */
+      a.read-more {
+          display: inline-block;
+          padding: 10px 20px;
+          border-radius: 5px; /* Rounded corners */
+          background-color: var(--mediumGreen);
+          color: white;
+          text-decoration: none; /* Remove underline */
+          transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition on hover */
+      }
+
+      a.read-more:hover {
+          transform: scale(1.1); /* Zoom in effect on hover */
+          background-color: #4CAF50; /* Change background color on hover */
+      }
+
+      /* Container styling to position the button to the right */
+      .container-with-button {
+          text-align: right; /* Align content to the right within the container */
+          margin-top: -25px; /* Adjust margin to position button */
+      }
+      /* Style for underlining and changing color on hover */
+      .underline-on-hover {
+          text-decoration: underline; /* Add underline to the text */
+          text-underline-position: below; /* Position the underline below the text */
+          color: #333; /* Set the default text color */
+          transition: color 0.3s ease; /* Smooth transition for color change on hover */
+      }
+
+      .underline-on-hover:hover {
+          color: #4CAF50; /* Change text color to green on hover */
+      }
+
+      .search-form {
+        margin-bottom: 20px;
+      }
+
+    /* Style for the search input */
+    .search-input {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding and border are included in width */
+    }
+
+    /* Style for the search button */
+    .search-button {
+        padding: 10px 15px;
+        font-size: 14px;
+        border: none;
+        background-color: var(--mediumGreen);
+        margin-top: 5px;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    }
+    .search-button:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+    /* Style for the search button icon */
+    .search-button i {
+        margin-right: 5px;
+    }
+    /* Sidebar hyperlink styles */
+    .sidebar a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #1e7027;
+        transition: transform 0.3s ease, color 0.3s ease; /* Apply transition to transform and color properties */
+    }
+
+/* Hover effect for sidebar hyperlinks */
+    .sidebar a:hover {
+        color: #4CAF50; /* Change text color on hover to green */
+        transform: scale(1.1); /* Zoom in effect on hover */
+    }
+    /* Reset default form styles */
+      form {
+          font-family: Arial, sans-serif;
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style form labels */
+      label {
+          font-weight: bold;
+      }
+
+      /* Style form inputs and textareas */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box; /* Ensure padding and border are included in width */
+      }
+
+      /* Style submit button */
+      input[type="submit"] {
+        background-color: var(--mediumGreen);
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #0a3c0c;
+      }
+      .container1 {
+          position: relative;
+          width: 350px; /* Set the width of the container */
+          height: 350px; /* Set the height of the container */
+          overflow: hidden; /* Hide overflow content */
+          border-radius: 50%; /* Create a circular shape using border-radius */
+      }
+                
+      iframe {
+          position: absolute;
+          top: 50%; /* Position the iframe in the center vertically */
+          left: 50%; /* Position the iframe in the center horizontally */
+          transform: translate(-50%, -50%); /* Move the iframe back by half of its size */
+          width: 100%; /* Set the width to 100% of the container */
+          height: 100%; /* Set the height to 100% of the container */
+          border: 0; /* Remove border */
+      }
+      /* Box Container Styles */
+.box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Box Icon Styles */
+.box-icon {
+    background-color: #f9f9f9; /* Background color for icon container */
+    padding: 15px; /* Padding around the icon */
+    border-radius: 50%; /* Rounded shape for icon container (circle) */
+    margin-right: 20px; /* Margin to separate icon from content */
+}
+
+/* Icon Styles */
+.box-icon span {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+}
+
+/* Box Content Styles */
+.box-content {
+    flex: 1; /* Take remaining space in the box */
+}
+
+/* Title (H3) Styles */
+.box-content h3 {
+    margin-top: 0; /* Remove default margin */
+    color: #333; /* Title color */
+}
+
+/* Paragraph (P) Styles */
+.box-content p {
+    margin-bottom: 10px; /* Bottom margin for paragraphs */
+    color: #666; /* Text color */
+}
+
+/* Anchor (A) Styles */
+.box-content a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Anchor (A) Hover Styles */
+.box-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+      /* Responsive styling for smaller screens */
+      @media screen and (max-width: 600px) {
+          form {
+              width: 90%;
+          }
+      }
+          /* Style for hamburger icon (3 bars) */
+          .bar-mobile {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        .bars {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+      }
+    /* .banner-nitin {
+            background: url('images/index/Bannerfinal.jpg');
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+
+        } */
+	</style>
+</head>
+<body><!-- BEGIN HEADER -->
+<header class="header-v1 stricky">
+<div class="container">
+<div class="header clearfix p-5">
+<div class="logo pull-left"><a href="index.html"><img alt="Nitin Estate" class="logo" src="images/index/logo.png" style="padding: 6px;" /></a></div>
+
+<div class="main-menu pull-right">
+<ul class="menu">
+	<li class="header-menu header-menu-active"><a href="index.html">Home</a></li>
+  <li class="header-menu"><a href="our-story.html">Our Story</a>
+	<li class="header-menu"><a href="tour.html">Tour</a>
+  <li class="header-menu"><a href="event.html">Events</a></li></li>
+	<li class="header-menu"><a href="nitin-cafe.html">Nitin Cafe</a></li>
+  <li class="header-menu"><a href="gallery.html">Gallery</a></li>
+  <li class="header-menu"><a href="plant-sci.html">Plant Science</a></li>
+  <li class="header-menu"><a href="blog.html">Blogs</a></li>
+	<li class="header-menu"><a href="contact.html">Contact us</a></li>
+</ul>
+</div>
+
+<div class="bars pull-right">
+<div class="bar-mobile open"></div>
+</div>
+
+<div class="mobile-menu">
+<nav class="nav-holder">
+<ul>
+	<li class="garden-hv-child-color-primary"><a href="index.html">Home</a></li>
+  <li class="garden-hv-child-color-primary"><a href="our-story.html">Our Story</a></li>
+	<li class="garden-hv-child-color-primary"><a href="tour.html">Tour</a></li>
+  <li class="garden-hv-child-color-primary"><a href="event.html">Events</a></li>
+  <li class="garden-hv-child-color-primary"><a href="nitin-cafe.html">Nitin Cafe </a></li>
+  <li class="garden-hv-child-color-primary"><a href="gallery.html">Gallery</a></li>
+  <li class="garden-hv-child-color-primary"><a href="plant-sci.html">Plants Science </a></li>
+  <li class="garden-hv-child-color-primary"><a href="blog.html">Blogs</a></li>
+	<li class="garden-hv-child-color-primary"><a href="contact.html">Contact us</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<!-- END HEADER --><!-- BEGIN SLIDER -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer-v1">
+            <div class="footer" style="background: url('images/index/footer (1).png'); background-size: cover;">
+                <div class="container" style="color: white;">
+                    <div class="row">
+                        <!-- Column 1: Logo -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <img alt="" height="120px" src="images/index/Nitin Estate Logo Monogram.png" />
+                        </div>
+        
+                        <!-- Column 2: Navigation Links -->
+                        <div class="col-lg-3 col-md-6 col-sm-12" style="border-right: 2px solid white; padding-left: 50px;">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="tour.html">Tour</a></li>
+                                <li><a href="our-story.html">Our Story</a></li>
+                                <li><a href="plant-sci.html">Plants Science</a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- Column 3: Additional Links -->
+                        <div class="col-lg-3 col-md-6 col-sm-12" style="border-right: 2px solid white; padding-left: 50px;">
+                            <ul>
+                                <li><a href="nitin-cafe.html">Nitin Cafe</a></li>
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- Column 4: Legal Information -->
+                        <div class="col-lg-3 col-md-6 col-sm-12" style="padding-left: 50px;">
+                            <ul>
+                                <li><a href="Disclaimer.html">Disclaimer</a></li>
+                                <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
+                                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                                <li><a href="Cancellation and refund Policy.html">Cancellation and refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Copyright Section -->
+            <div class="copyright text-center" style="background-color: #53261a;">
+                <p>&copy; Nitin Estate, All rights reserved</p>
+                <ul>
+                    <!-- Social Media Icons -->
+                    <li><a href="https://www.facebook.com/profile.php?id=61558536050311&amp;mibextid=uzlsIk"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Facebook Social Media Icon.png" /></a></li>
+                    <li><a href="https://www.instagram.com/nitin_estate?igsh=MTAybXh0NWoycDluaw=="><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Instagram Social Media Icon.png" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/nitin-estate"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate LinkedIn Social Media Icon.png" /></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=7387069411"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Whatsapp Social Media Icon.png" /></a></li>
+                    <li><a href="https://www.youtube.com/@nitinestate264"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate YouTube Social Media Icon.png" /></a></li>
+                </ul>
+            </div>
+        </footer>
+<!-- Back to Top Button -->
+<!-- START JQUERY JS -->
+<div class="backtotop">
+    <i class="fa fa-angle-double-up"></i>
+  </div>
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="plugins/jquery-1.12.4/jquery-1.12.4.min.js"></script>
+  <script src="plugins/bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="plugins/owl-carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="plugins/slick/slick.min.js" type="text/javascript"></script>
+  <!-- END JQUERY JS -->
+  
+  <!-- BEGIN REVOLUTION SLIDER -->
+   <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+   <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+   <!-- END REVOLUTION SLIDER -->
+    
+   <!-- BEGIN MAIN JS -->
+    <script src="js/main.js"></script>
+    <!-- END MAIN JS  -->

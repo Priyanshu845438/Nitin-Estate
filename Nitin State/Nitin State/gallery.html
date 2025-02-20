@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="nitin estate, Nitin Estate covers 6 acres and now has a collection of over 120 plant species displayed in a thematic estate.People from around the country visit us to enjoy educational opportunities, lip-smacking Dongri cuisine in Nitin’s cafe, and our priceless collection of inspiring plants.">
+    <meta name="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gallery</title>
+    <meta name="robots" content="index,follow">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
+    <link href="plugins/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/flaticon/font/flaticon.css" rel="stylesheet" type="text/css">
+    <link href="plugins/owl-carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/slick/slick.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN REVOLUTION SLIDER -->
+    <link rel="stylesheet" href="plugins/revolution/css/settings.css">
+    <link rel="stylesheet" href="plugins/revolution/css/layers.css">
+    <link rel="stylesheet" href="plugins/revolution/css/navigation.css">
+    <!-- END REVOLUTION SLIDER -->
+    <!-- BEGIN TEMPLATE LAYOUT STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font.css">
+    <!-- END TEMPLATE LAYOUT STYLES -->
+    <link rel="shortcut icon" href="images/nitin-cafe/packaging/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/himanshu-global.css">
+    <style>
+        /* Gallery container */
+
+        .pointers-point>h3 {
+            color: var(--mediumGreen) !important;
+            font-size: 24px !important;
+        }
+
+        .pointers-point>p {
+            color: var(--darkGreen) !important;
+            font-size: 16px !important;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 5px;
+            padding: 30px; /* Added padding */
+        }
+
+        /* Individual image */
+        .image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover effect */
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        #loadMoreBtnContainer {
+            display: flex;
+            justify-content: center; /* Align items horizontally in the center */
+        }
+        #loadMoreBtn {
+            background-color: #0a4b35; /* Green background */
+            border: none; /* Remove border */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            text-align: center; /* Center text horizontally */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline-block */
+            font-size: 16px; /* Font size */
+            margin: 10px 0; /* Add margin */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+        }
+        #loadMoreBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        
+        /* Fullscreen modal */
+        #fullscreenModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #fullscreenModal img {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: 50px;
+        }
+
+                  /* Style for hamburger icon (3 bars) */
+                  .bar-mobile {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        .bars {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+        }
+      }
+
+        #closeBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background-color: rgb(174, 5, 5);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- BEGIN HEADER -->
+        <header class="header-v1 stricky">
+            <div class="container">
+            <div class="header clearfix p-5">
+            <div class="logo pull-left"><a href="index.html"><img alt="Nitin Estate" class="logo" src="images/index/logo.png" style="padding: 6px;" /></a></div>
+            
+            <div class="main-menu pull-right">
+            <ul class="menu">
+                <li class="header-menu"><a href="index.html">Home</a></li>
+              <li class="header-menu"><a href="our-story.html">Our Story</a>
+                <li class="header-menu"><a href="tour.html">Tour</a>
+              <li class="header-menu"><a href="event.html">Events</a></li></li>
+                <li class="header-menu"><a href="nitin-cafe.html">Nitin Cafe</a></li>
+              <li class="header-menu header-menu-active"><a href="gallery.html">Gallery</a></li>
+              <li class="header-menu"><a href="plant-sci.html">Plant Science</a></li>
+              <li class="header-menu"><a href="blog.html">Blogs</a></li>
+                <li class="header-menu"><a href="contact.html">Contact us</a></li>
+            </ul>
+            </div>
+            
+            <div class="bars pull-right">
+            <div class="bar-mobile open"></div>
+            </div>
+            
+            <div class="mobile-menu">
+            <nav class="nav-holder">
+            <ul>
+                <li class="garden-hv-child-color-primary"><a href="index.html">Home</a></li>
+              <li class="garden-hv-child-color-primary"><a href="our-story.html">Our Story</a></li>
+                <li class="garden-hv-child-color-primary"><a href="tour.html">Tour</a></li>
+              <li class="garden-hv-child-color-primary"><a href="event.html">Events</a></li>
+              <li class="garden-hv-child-color-primary"><a href="nitin-cafe.html">Nitin Cafe </a></li>
+              <li class="garden-hv-child-color-primary"><a href="gallery.html">Gallery</a></li>
+              <li class="garden-hv-child-color-primary"><a href="plant-sci.html">Plants Science </a></li>
+              <li class="garden-hv-child-color-primary"><a href="blog.html">Blogs</a></li>
+                <li class="garden-hv-child-color-primary"><a href="contact.html">Contact us</a></li>
+            </ul>
+            </nav>
+            </div>
+            </div>
+            </div>
+            </header>
+        <!-- END HEADER -->
+<br>
+<div class="gallery">
+    <div class="image" onclick="openFullscreenModal('images/gallery/1.jpg')"><img src="images/gallery/1.jpg" alt="Image 1"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/2.jpg')"><img src="images/gallery/2.jpg" alt="Image 2"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/3.jpg')"><img src="images/gallery/3.jpg" alt="Image 3"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/4.jpg')"><img src="images/gallery/4.jpg" alt="Image 4"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/5.jpg')"><img src="images/gallery/5.jpg" alt="Image 5"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/6.jpg')"><img src="images/gallery/6.jpg" alt="Image 6"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/7.jpg')"><img src="images/gallery/7.jpg" alt="Image 7"></div>
+    <div class="image" onclick="openFullscreenModal('images/gallery/8.jpg')"><img src="images/gallery/8.jpg" alt="Image 8"></div>
+    <!-- Add more images here -->
+</div>
+
+<div id="loadMoreBtnContainer">
+    <button id="loadMoreBtn">Load More</button>
+</div>
+
+<div id="fullscreenModal">
+    <button id="closeBtn" onclick="closeFullscreenModal()">Close Image</button>
+    <img id="fullscreenImg" src="" alt="Fullscreen Image">
+</div>
+    <!-- footer -->
+    <footer class="footer-v1">
+        <div class="footer" style="background: url('images/index/footer (1).png'); background-size: cover;">
+            <div class="container" style="color: white;">
+                <div class="row">
+                    <!-- Column 1: Logo -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <img alt="" height="120px" src="images/index/Nitin Estate Logo Monogram.png" />
+                    </div>
+    
+                    <!-- Column 2: Navigation Links -->
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="border-right: 2px solid white; padding-left: 50px;">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="tour.html">Tour</a></li>
+                            <li><a href="our-story.html">Our Story</a></li>
+                            <li><a href="plant-sci.html">Plants Science</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Column 3: Additional Links -->
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="border-right: 2px solid white; padding-left: 50px;">
+                        <ul>
+                            <li><a href="nitin-cafe.html">Nitin Cafe</a></li>
+                            <li><a href="blog.html">Blogs</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Column 4: Legal Information -->
+                    <div class="col-lg-3 col-md-6 col-sm-12" style="padding-left: 50px;">
+                        <ul>
+                            <li><a href="Disclaimer.html">Disclaimer</a></li>
+                            <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
+                            <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                            <li><a href="Cancellation and refund Policy.html">Cancellation and refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="copyright text-center" style="background-color: #53261a;">
+            <p>&copy; Nitin Estate, All rights reserved</p>
+            <ul>
+                <!-- Social Media Icons -->
+                <li><a href="https://www.facebook.com/profile.php?id=61558536050311&amp;mibextid=uzlsIk"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Facebook Social Media Icon.png" /></a></li>
+                <li><a href="https://www.instagram.com/nitin_estate?igsh=MTAybXh0NWoycDluaw=="><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Instagram Social Media Icon.png" /></a></li>
+                <li><a href="https://www.linkedin.com/company/nitin-estate"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate LinkedIn Social Media Icon.png" /></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=7387069411"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate Whatsapp Social Media Icon.png" /></a></li>
+                <li><a href="https://www.youtube.com/@nitinestate264"><img alt="" class="social-icons" src="images/footer/social-icons/Nitin Estate YouTube Social Media Icon.png" /></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+
+<script>
+    function openFullscreenModal(imageUrl) {
+        const fullscreenModal = document.getElementById('fullscreenModal');
+        const fullscreenImg = document.getElementById('fullscreenImg');
+        fullscreenImg.src = imageUrl;
+        fullscreenModal.style.display = 'block';
+    }
+
+    function closeFullscreenModal() {
+        const fullscreenModal = document.getElementById('fullscreenModal');
+        fullscreenModal.style.display = 'none';
+    }
+    
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+const gallery = document.querySelector('.gallery');
+
+let imagesDisplayed = 8;
+const maxImages = 36;
+
+loadMoreBtn.addEventListener('click', () => {
+    const remainingImages = Math.min(maxImages - imagesDisplayed, 8);
+    if (remainingImages <= 0) {
+        return; // No more images to load
+    }
+    for (let i = 0; i < remainingImages; i++) {
+        const newIndex = imagesDisplayed + i + 1;
+        const newImage = document.createElement('div');
+        newImage.className = 'image';
+        newImage.innerHTML = `<img src="images/gallery/${newIndex}.jpg" alt="Image ${newIndex}">`;
+        newImage.addEventListener('click', () => openFullscreenModal(`images/gallery/${newIndex}.jpg`));
+        gallery.appendChild(newImage);
+    }
+    imagesDisplayed += remainingImages;
+    if (imagesDisplayed >= maxImages) {
+        loadMoreBtn.style.display = 'none'; // Hide the button when maximum images are loaded
+    }
+});
+
+</script>
+<!-- START JQUERY JS -->
+<div class="backtotop">
+    <i class="fa fa-angle-double-up"></i>
+  </div>
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="plugins/jquery-1.12.4/jquery-1.12.4.min.js"></script>
+  <script src="plugins/bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="plugins/owl-carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="plugins/slick/slick.min.js" type="text/javascript"></script>
+  <!-- END JQUERY JS -->
+  
+  <!-- BEGIN REVOLUTION SLIDER -->
+   <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+   <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+   <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+   <!-- END REVOLUTION SLIDER -->
+    
+   <!-- BEGIN MAIN JS -->
+    <script src="js/main.js"></script>
+    <!-- END MAIN JS  -->
+
+</body>
+</html>
